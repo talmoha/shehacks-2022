@@ -12,7 +12,7 @@ body {
     background-image: url("");
     background-size: cover;
     background-repeat: repeat-y;
-    background-color: #FFFAED;
+    background-color: #E9EBDE;
 }
 
 #ho-body{
@@ -419,7 +419,7 @@ footer img {
     position: relative;
     margin-top: -90%;
     margin-inline: 15%;
-    margin-bottom: 10%;
+    margin-bottom: 0%;
 }
 
 .past-events h4{
@@ -437,7 +437,7 @@ footer img {
 /* *********************** projects **************************** */
 
 #projects {
-    margin-top: 10vh;
+    margin-top: 0%;
 }
 .project-card{
     background-image: url("images/projects/board.png");
