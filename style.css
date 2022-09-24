@@ -1,0 +1,820 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #EFFEFF;
+    font-family: "Poppins";
+    font-weight: 400;
+    background-image: url("");
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-color: #FFFAED;
+}
+
+#ho-body{
+    background-color: #EFFEFF;
+    font-family: "Poppins";
+    font-weight: 400;
+    background-image: url("images/noise.png"), url("images/hacker-olympics/background.png");
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-color: #FFFAED;
+}
+
+/* for debugging */
+/* body > * > * > * > * {
+    border: solid;
+}  */
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+h1, h2, h3, h4 {
+    /* font-family: "Reckless Neue";
+    background-color: #244589;
+    font-weight: 1000;
+    letter-spacing: -0.05em;
+    font-size: 60px;
+    background-image: linear-gradient(180deg, #244589, #F08F65);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent; */
+    color: #244589;
+    font-family: "Poppins";
+    font-weight: 700;
+}
+
+h5, h6{
+    color: #244589;
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+p{
+    color: #244589;
+    font-family: "Poppins";
+    font-size: x-large;
+}
+.container{
+    padding: 5% 0%;
+}
+
+.vertical-center{
+    display:flex;
+    align-items: center;
+}
+
+.horizontal-center{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.inner-shadow{
+    box-shadow: 0px -16px 30px 0px rgba(240, 143, 101, 0.85) inset;
+}
+
+/****************************************************** navbar *******************************************************/
+nav {
+    background-color: white;
+    z-index: 3000;
+    overflow: hidden;
+}
+
+.navbar ul {
+    justify-content: flex-end;
+    
+}
+
+.navbar .nav-item .nav-link {
+    font-family: "Poppins";
+    font-weight: 600;
+    color: #FFFFFE;
+    transition: all 0.3s ease 0s;
+}
+
+.navbar .nav-item .nav-link:hover{
+    color: #144256;
+}
+
+.nav-link.active {
+    color: #144256 !important;
+}
+
+.navbar-brand img {
+    width: 48px;
+    height: 40px;
+    align-items: center;
+    position: absolute;
+    top: 0.6em;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #E57154;
+    height: 80px;
+    padding: .5rem 1rem;
+}
+
+.burger-image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top:0%;
+}
+
+.curved-path{
+    font-size: 0.6em;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 190px;
+    fill: #244589;
+}
+
+.blob{
+    z-index: -1;
+    position: relative;
+    height: auto;
+    top: 0;
+    position: absolute;
+    width: 40vw;
+    height: 110vh;
+}
+
+.blob-ho{
+    z-index: -1;
+    position: relative;
+    height: auto;
+    margin-top: 35vh;
+    position: absolute;
+    width: 20vw;
+}
+
+.blob-ho-right{
+    top: 70vh;
+}
+
+.blob-left{
+    left: 0em;
+}
+
+.blob-right{
+    right: 0em;
+}
+
+.sh-logo{
+    position: absolute;
+    width: 55%;
+    top: 30em;
+    left: 21em;
+}
+
+/* ************************************************ history ****************************************************** */
+.history-text{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: xx-large;
+    color:#244589;
+    margin-left: 2%;
+}
+.mobile, .phone{
+    display: none;
+}
+
+
+/****************************************************** FAQ *******************************************************/
+.strip{
+    padding: 100px 0px;
+}
+
+.accordion{
+    margin: auto;
+    padding: 0px 7%;
+}
+
+.accordion-item{
+    background-color: none;
+}
+
+.accordion-item-header{
+    padding: 1rem 3rem 1rem 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-bottom: grey solid 1px;
+    color: #244589;
+}
+
+.accordion-item-header::after{
+    font-weight: 400;
+    content: "\002B";
+    color:#ed8d67;
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.accordion-item-header.active::after{
+    transform: rotate(45deg);
+    color: grey;
+}
+
+.accordion-item-body{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-item-body-content{
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+/****************************************************** footer *******************************************************/
+footer{
+    margin-top: 7%;
+    background-size: 100%;
+    background-position: center, left top;
+    background-repeat: no-repeat;
+}
+
+footer .container {
+    padding-bottom: 0 !important;
+}
+
+footer h2{
+    font-size: 500%;
+    font-weight: 900;
+    line-height: 100px;
+    background-color: #F08F65;
+    background-image: linear-gradient(top,  #244589, #F08F65);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+
+}
+
+footer p {
+    font-size: 150%;
+    color: #144256;
+    font-family: "Poppins";
+    font-weight: 600;
+    color: #244589;
+}
+
+footer i {
+    font-size: 3rem;
+    color: #CBC3E3;
+}
+
+footer i:hover{
+    opacity: 0.5;
+    transition: all 0.3s ease 0s;
+}
+
+footer img {
+    float: right;
+}
+
+
+/* burger page */
+#splash-screen {
+    width: 100vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat no-repeat;
+    background-position: top, center;
+}
+
+
+.background-splash{
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    z-index: 1;
+
+}
+
+#splash-screen .container{
+    align-items: center;
+
+}
+
+.transition{
+    position: relative;
+    height: 100vh;
+}
+.simple{
+    text-shadow: 0 1px 0 #FFB6C1;
+}
+
+.fix{
+    bottom:0px;
+    left: 0px;
+}
+
+/* about */
+.about{
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 0%;
+    background-image: url(grain.png);
+}
+.about-text{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: xx-large;
+    color:#244589;
+    padding-block: 2%;
+}
+
+.bowl-noodles{
+    position: relative;
+    right: -32%;
+}
+
+.tomatoes{
+    position: relative;
+    left: -33%;
+}
+
+.olives{
+    position: relative;
+    top: -30%;
+    right: -49%;
+}
+
+
+/* hall of fame */
+#fame{
+    margin-top: 10vh;
+}
+.sushi{
+    position: relative;
+    top: 0;
+    margin-top: -21%;
+    margin-right: 0;
+    padding: 0;
+}
+
+.title{
+    position: relative;
+    margin-left: 10vw;
+    top: 25%;
+}
+
+.hall-of-fame-title{
+    width: 75%;
+    padding: 5% 5%;
+}
+
+/* past-events */
+.lettuce{
+    margin-left: 1.5%;
+    z-index: 0;
+    position: relative;
+}
+
+.moon{
+    margin-left: 0%;
+    z-index: 0;
+    margin-top: 10%;
+    position:absolute;
+    text-align: left;
+}
+
+.backup-lettuce{
+    display: none;
+}
+
+/* tas
+#past-events {
+    margin-top: 10vh;
+}
+*/
+
+.past-events{
+    top: 2.5em;
+    position: relative;
+    margin-top: -90%;
+    margin-inline: 15%;
+    margin-bottom: 10%;
+}
+
+.past-events h4{
+    font-family: "Poppins";
+    color: #244589;
+    font-weight: 700;
+}
+
+.past-events h5{
+    font-family: "Poppins";
+    color: #F08F65;
+    font-weight: 300;
+}
+
+/* *********************** projects **************************** */
+
+#projects {
+    margin-top: 10vh;
+}
+.project-card{
+    background-image: url("images/projects/board.png");
+    background-size:     contain;                    
+    background-repeat:   no-repeat;
+    background-position: center center;
+    border-radius: 30px;
+}
+
+#projects-mobile{
+    display: none;
+}
+
+#projects-mobile .slick-slide{
+    height: 75vh;
+}
+
+#projects-mobile .slick-prev:before, #projects-mobile .slick-next:before{
+    color: #244589;
+    opacity: 1;
+    font-size: 30px;
+}
+
+#projects .slick-slide{
+    height: 630px;
+}
+
+#projects .slick-prev:before, #projects .slick-next:before{
+    color: #244589;
+    opacity: 1;
+    font-size: 30px;
+}
+
+.project-image{
+    background-image: url('images/projects/bridge-it.png'); 
+    background-size: contain; 
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/*Sponsors*/
+.diamond{
+    position: relative;
+    top: 0;
+    left: -28%;
+    top: 2%; 
+}
+
+.why-sponsor{
+    position: relative;
+    margin-top: 10%;
+}
+.why-sponsor-title{
+    position: relative;
+}
+
+.why-sponsor-text{
+        font-family: "Poppins";
+        font-weight: 400;
+        font-size: x-large;
+        color:#244589;
+        margin-left: 2%;
+}
+
+/**WIT**/
+.wits{
+    margin-top: -150%;
+    z-index: 2;
+    position: relative;
+}
+.wits-title{
+    width: 25%;
+}
+
+.team-text{
+    color:#496973;
+}
+
+.t-left{
+    margin-right: -18%;
+}
+
+/* hacker olympics */
+.ho-title{
+    width: 50%;
+}
+.goal-title{
+    width: 30%
+}
+
+@media(max-width:1600px){
+    .wits{
+        margin-top: -120%;
+    }
+}
+
+@media(max-width:1300px){
+    .wits{
+        margin-top: -100%;
+    }
+}
+
+@media (max-width:991px){
+    .wits{
+        margin-top: -110%;
+    }
+     .reverse-col{
+        flex-direction:column-reverse;
+        padding:5%;
+    }
+
+    .burger-image{
+        top: 15%;
+        max-width: 100%;
+        z-index:100;
+        position: relative;
+        left: 2em;
+    }
+
+    .past-events{
+        position: relative;
+        margin-top: -90%;
+        margin-inline: 15%;
+    }
+    
+    .past-events h4{
+        font-family: "Poppins";
+        color: #244589;
+        font-weight: 700;
+        font-size: smaller;
+    }
+    
+    .past-events h5{
+        font-family: "Poppins";
+        color: #F08F65;
+        font-weight: 300;
+        font-size: smaller;
+    }
+}
+
+.orange-button{
+    background-color: #F08F65;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    border: none;
+    padding: 18px 25px;
+    font-size: large;
+}
+.left-align{
+    justify-content:left; 
+    align-items: left; 
+    display: flex;
+}
+
+.orange-button:hover{
+    opacity: 0.5;
+    transition: all 0.3s ease 0s;
+}
+
+.social-icon{
+    color: #244589;
+    font-size: 3em;
+    text-decoration:none;
+}
+.social-icon:hover{
+    color: #CDD6FB;
+    opacity: 50%;
+    font-size: 3em;
+    transition: all 0.3s ease 0s;
+    text-decoration:none;
+}
+
+/* Sponsor imgs Grow */
+.hvr-grow {
+    padding: 2%;
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+@media (max-width: 768px){
+    .blob {
+        height: 70vh;
+    }
+    .past-events{
+        position: relative;
+        margin-top: -90%;
+        margin-inline: 15%;
+    }
+
+    .burger-image{
+        max-width: 90%;
+        z-index:100;
+        position: relative;
+        left: 2em;
+    }
+
+    #projects .slick-slide{
+        height: 400px;
+    }
+    .desktop, .phone{
+        display: none;
+    }
+    .mobile{
+        display: contents;
+    }
+    .wits{
+        margin: 0 5%;
+        z-index: 2;
+        position: relative;
+    }
+    .wits-title{
+        width: 45%;
+    }
+    .hall-of-fame-title{
+        width: 90%;
+        padding-left: 5%;
+    }
+    .ho-title{
+        width: 75%;
+    }
+    .goal-title{
+        width: 50%
+    }
+}
+
+
+@media (max-width: 576px){
+    .phone{
+        display:contents;
+    }
+    .blob{
+        display: none;
+    }
+   
+    .olives{
+        position: relative;
+        margin-top: 50%;
+        right: -13%;
+    }
+    .burger-image{
+        max-width: 90%;
+        z-index:100;
+        position: relative;
+        top: 2em;
+        left: 1em;
+    }
+
+    .orange-button{
+        top: 1em;
+        font-size: medium;
+
+    }
+
+    .lettuce{
+        display: None;
+    }
+
+    .moon{
+        display: None;
+    }
+
+    .backup-lettuce{
+        display: block;
+        padding-inline: 5%;
+    }
+
+    .past-events{
+        position: relative;
+        margin-top: -180%;
+        margin-inline: 15%;
+    }
+    
+    .past-events h4{
+        font-family: "Poppins";
+        color: #244589;
+        font-weight: 700;
+        margin: auto;
+    }
+    
+    .past-events h5{
+        font-family: "Poppins";
+        color: #F08F65;
+        font-weight: 300;
+    }
+
+    .disappear{
+        display: none;
+    }
+
+    .title{
+        width: 75%;
+        position: relative;
+        left: 0;
+        padding: 5%;
+    }
+    .hall-of-fame-title{
+        width: 100%;
+    }
+    #projects .slick-slide{
+        height: 75vh;
+    }
+    #projects-mobile{
+        display: block;
+    }    
+    #projects{
+        display: none;
+    }
+    .history-cd{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .desktop, .not-phone{
+        display: none;
+    }
+    .history-text{
+        font-family: "Poppins";
+        font-weight: 400;
+        font-size: x-large;
+        color:#244589;
+        margin-left: 2%;
+    }
+    .about-text, .why-sponsor-text{
+        font-family: "Poppins";
+        font-weight: 400;
+        font-size: large;
+        color:#244589;
+        text-align: center;
+        padding-block: 0;
+    }
+    .about-title{
+        position: relative;
+        text-align: center;
+        margin-left: 10%;
+    }
+    .about-shehacks {
+        position: relative;
+        text-align: center;
+        margin-left: 10%;
+        font-size: 14px;
+    }
+
+    .about-olyampics{
+        position: relative;
+        text-align: center;
+        margin-left: 4%;
+        font-size: 14px;
+
+    }
+    .wits-title{
+        width: 60%;
+    }
+    .ho-title{
+        width: 80%;
+    }
+    .goal-title{
+        width: 60%
+    }
+}
+
+@media (min-width: 992px){s
+    h1{
+        font-size: 120px;
+    }
+}

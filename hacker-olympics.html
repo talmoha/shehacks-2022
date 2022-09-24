@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Title -->
+    <title>SheHacks</title>
+    <link rel="icon" href="../images/icon.ico" type="image/x-icon">
+
+    <!--aos animations-->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Slick slider-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+
+    <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
+    <script src="https://kit.fontawesome.com/db7dd3a66d.js" crossorigin="anonymous"></script>
+</head>
+
+
+<!--Body Starts-->
+
+<body id="ho-body" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!--nav bar-->
+
+    <header>
+        <nav class="navbar navbar-light navbar-expand-md fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <a href="index.html" class="navbar-brand" style="padding: 5px auto 2px auto; "><img
+                        src="images/nav-logo.png" alt="she/hacks"></a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="navbar-toggler-icon"></i>
+                </button>
+
+                <!-- collapse navbar -->
+                <div class="navbar-collapse collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto w-100 clearfix">
+                        <li class="nav-item"><a class="nav-link" href="index.html">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#index">OLYMPICS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">COMMUNITY</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">SPONSOR</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--MLH BADGE-->
+    <a id="mlh-trust-badge"
+        style="display:block;max-width:100px;min-width:60px;position:fixed;right:65px;top: 80px;;width:10%;z-index:10000"
+        href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=black"
+        target="_blank"><img
+            src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-black.svg"
+            alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
+
+    <section id="splash-screen">
+        <div class="container horizontal-center">
+            <!--blobs-->
+            <div>
+                <img src="images/hacker-olympics/blob-left.png" alt="blob" class="blob-left blob-ho rellax" data-rellax-speed="3">
+                <img src="images/hacker-olympics/blob-right.png" alt="blob" class="blob-right blob-ho blob-ho-right rellax" data-rellax-speed="3">
+            </div>
+            <div class="container rellax text-center" data-rellax-speed="-2">
+                <img class="burger-image w-100" src="images/hacker-olympics/martini.png">
+            </div>
+        </div>
+        <img src="images/hacker-olympics/intro-blobs.png" alt="blob" class="blob-right blob-ho rellax" data-rellax-speed="3">
+    </section>
+    
+    <section>
+        <div class="container px-4">
+            <div class="row">
+                <img src="images/hacker-olympics/intro-ho.png" class="w-50 py-5">
+                <p>The Hacker Olympics is an alternate competition stream for a selected group of beginner hackers 
+                    who aim to expand their coding skills and tech knowledge during SheHacks. </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container"></div>
+
+    <section id="ho-intro">
+        <div class="container">
+            <div class="row vertical-center">
+                <div class="col-lg-4 col-md-4 col">
+                    <img src="images/hacker-olympics/milk.png" class="w-100">
+                </div>
+                <div class="col-lg-1 col-md-1"></div>
+                <div class="col-lg-7 col-md-7 col">
+                    <img src="images/hacker-olympics/who.png" class="w-25 py-4">
+                    <p>First-time hackers with little-to-no coding experience</p>
+                    <img src="images/hacker-olympics/what.png" class="w-25 py-4">
+                    <p>Hackers in this stream will work in teams of 4 to complete a series of 
+                        specially-designed technical challenges instead of competing in the 
+                        regular stream to build the “perfect” hack. Challenges will be built 
+                        upon skills taught in workshops that run during SheHacks
+                    </p>
+                </div>
+            </div>
+            <img src="images/hacker-olympics/goal-blob.png" alt="blob" class="blob-left blob-ho rellax desktop" data-rellax-speed="3">
+        </div>
+    </section>
+
+    <div class="container"></div>
+
+    <section id="goal" style="text-align: right;">
+        <img src="images/hacker-olympics/goal-blob-right.png" alt="blob" class="blob-right blob-ho rellax desktop" data-rellax-speed="3">
+        <div class="container px-4">
+            <div class="w-100">
+                <img src="images/hacker-olympics/goal.png" class="goal-title">
+            </div>
+            <br>
+            <div class="w-100">
+                <h3>
+                    Bridge the skills gap that drives the lack of diversity in the tech industry.
+                </h3>
+                <br>
+                <p>Women and non-binary individuals face more barriers to exploring tech interests and getting the education and experience to enter the tech industry. 
+                    Hacker Olympics is the first step in bridging the gap 
+                </p>
+                <br><br>
+                <h3>For beginners interested in tech, spark passion and help them overcome fear of doing - 
+                    Hacker Olympics is all about getting your hands dirty with coding and designing.
+                </h3>
+                <br>
+                <p>
+                    We understand how intimidating it can be to 
+                    start coding and learning about tech - this is a great 
+                    first step to help you figure out if tech is for you! 
+    
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container"></div>
+    <div class="container"></div>
+
+    <section id="last-year">
+        <div class="w-100 horizontal-center">
+            <img src="images/hacker-olympics/last-year.png" alt="last year's challenges" class="ho-title">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-6 horizontal-center">
+                    <img src="images/hacker-olympics/orange-juice.png" class="w-100">
+                    <div class="phone">
+                        <h4>Challenge 1</h4>
+                        <p>Intro to Python</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-6 horizontal-center">
+                    <img src="images/hacker-olympics/blue-drink.png" class="w-100">
+                    <div class="phone">
+                        <h4>Challenge 2</h4>
+                        <p>Intro to Machine Learning</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-6 horizontal-center">
+                    <img src="images/hacker-olympics/coffee.png" class="w-100">
+                    <div class="phone">
+                        <h4>Challenge 3</h4>
+                        <p>Rapid Problem-Solving in Product Design</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-6 horizontal-center">
+                    <img src="images/hacker-olympics/beer.png" class="w-100">
+                    <div class="phone">
+                        <h4>Challenge 4</h4>
+                        <p>Web Development with HTML and CSS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row not-phone my-3">
+                <div class="col-lg-3 col-md-3 col-6 horizontal-center" style="margin-top: 0;">
+                    <h4>Challenge 1</h4>
+                    <p>Intro to Python</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-12 horizontal-center"  style="margin-top: 0;">
+                    <h4>Challenge 2</h4>
+                    <p>Intro to Machine Learning</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-12 horizontal-center" style="margin-top: 0;">
+                    <h4>Challenge 3</h4>
+                    <p>Rapid Problem-Solving in Product Design</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-12 horizontal-center" style="margin-top: 0;">
+                    <h4>Challenge 4</h4>
+                    <p>Web Development with HTML and CSS</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="strip">
+        <div class="container py-5 w-100">
+            <div class="row accordion">
+                <div class="horizontal-center w-100" style="text-align: left;">
+                    <img src="images/faq/faq.png" alt="faq"  class="w-25">
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        Doesn’t Hacker Olympics defeat the purpose of going to a hackathon: building a hack?
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            Not at all! You get to build a series of mini projects that are guided by applying what you’ve learned through workshops. 
+                            The purpose is to get you comfortable with working collaboratively on projects so that you can return to SheHacks 
+                            (or any other hackathon) feeling comfortable to build a full hack!
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        What challenges will I compete in?
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            TBD, announced as early as a week before the SheHacks+ weekend.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        What if I don’t have a team of 4?
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            Don’t worry! We will match you based on a series of questions so you get the 
+                            best possible experience working with a team that has a diverse set of skills.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        Can I be a beginner and compete in the regular stream?
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            Of course!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        Can I switch into this stream the day of SheHacks?
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            Unfortunately no, you must sign up and be accepted when applications for Hacker Olympics open. 
+                            If you miss this deadline, there will be a waitlist you can sign up for.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        Can I compete in both Hacker Olympics and regular stream?
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            Although we would love for everyone to participate in both, 
+                            we want to ensure you have enough time to complete your projects to the best of your ability. 
+                            With that being said, you can only sign up for one.
+                        </div>
+                    </div>               
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container horizontal-center">
+        <div class="w-100">
+            <img src="images/footer/still-have-question.png" alt="footer" class="w-75">
+        </div>
+        <br>
+        <h5>Shoot us an email at hello@shehacks.ca!</h5>
+        <a href="https://www.facebook.com/shehacks.uwo/" target="_blank" style="text-decoration: none;">
+            <span class="social-icon">
+                <i class="fab fa-facebook-square"></i>
+            </span>
+        </a>
+        <a href="https://www.instagram.com/wits.uwo/" target="_blank" style="text-decoration: none;">
+            <span class="social-icon">
+                <i class="fab fa-instagram-square"></i>
+            </span>
+        </a>
+        <a href="mailto:hello@shehacks.ca" target="_blank" style="text-decoration: none;">
+            <span class="social-icon" >
+                <i class="fa fa-envelope-square" ></i>
+            </span>
+        </a>
+        <a href="https://ca.linkedin.com/company/uwowits" target="_blank" style="text-decoration: none;">
+            <span class="social-icon">
+                <i class="fab fa-linkedin"></i>
+            </span>
+        </a>
+    </div>
+
+    <!-- footer -->
+    <footer class="w-100">
+        <img src="./images/footer/footer-image.png" width="100%" />
+    </footer>
+</body>
+
+<!-- parallax for splash page burger -->
+<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+<script>
+  var rellax = new Rellax('.rellax', {
+        center: true
+      });
+</script>
+
+<!--slick carousel script-->
+<script>
+    $('.carousel').slick({
+        slidesToShow: 3,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 20000,
+        cssEase:'linear',
+        infinite: true,
+        focusOnSelect: false,
+        pauseOnHover: true,
+        arrows:false,
+        dots:false,
+        responsive: [{
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+            }
+        },                           
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+            }
+        }, {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+            }
+        }]
+    });
+</script>
+
+<!-- projects slider -->
+<script>
+    $('.projects-slider').slick({
+        dots: true,
+        arrows:false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 992,
+            settings: {
+                arrows: false,
+                slidesToShow: 1,
+            }
+        },                           
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                arrows: false,
+            }
+        }]
+    });
+</script>
+
+<!--faq script-->
+<script>
+    const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+    accordionItemHeaders.forEach(accordionItemHeader => {
+        accordionItemHeader.addEventListener("click", event => {
+            accordionItemHeader.classList.toggle("active");
+            const accordionItemBody = accordionItemHeader.nextElementSibling;
+            if (accordionItemHeader.classList.contains("active")) {
+                accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+            }
+            else {
+                accordionItemBody.style.maxHeight = 0;
+            }
+        });
+    });
+</script>
+
+<!--Bootstrap jqueries-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+<!--aos init-->
+<script> AOS.init();</script>
+
+</html>
