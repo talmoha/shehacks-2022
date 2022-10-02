@@ -423,9 +423,10 @@ footer img {
 }
 
 .past-events h4{
-    font-family: "Poppins";
-    color: #244589;
-    font-weight: 700;
+    font-family: "Work Sans";
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: large;
 }
 
 .past-events h5{
@@ -564,9 +565,9 @@ footer img {
     }
     
     .past-events h4{
-        font-family: "Poppins";
-        color: #244589;
-        font-weight: 700;
+        font-family: "Work Sans";
+        color: #FFFFFF;
+        font-weight: 600;
         font-size: smaller;
     }
     
@@ -725,9 +726,9 @@ footer img {
     }
     
     .past-events h4{
-        font-family: "Poppins";
-        color: #244589;
-        font-weight: 700;
+        font-family: "Work Sans";
+        color: #FFFFFF;
+        font-weight: 600;
         margin: auto;
     }
     
