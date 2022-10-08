@@ -71,6 +71,13 @@ p{
     padding: 5% 0%;
 }
 
+.right-text{
+      width: 250px;
+      float: left;
+      display: inline;
+    
+  }
+
 .vertical-center{
     display:flex;
     align-items: center;
@@ -350,6 +357,7 @@ footer img {
     font-size: 22px;
     color:#244589;
     padding-block: 2%;
+    float: left;
 }
 
 .bowl-noodles{
@@ -510,6 +518,9 @@ footer img {
     margin-top: -150%;
     z-index: 2;
     position: relative;
+    img-sec{
+        float: left ;
+    }
 }
 .wits-title{
     width: 25%;
