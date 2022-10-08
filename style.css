@@ -75,8 +75,8 @@ p{
       width: 250px;
       float: left;
       display: inline;
-    
-  }
+    }
+  
 
 .vertical-center{
     display:flex;
@@ -518,9 +518,6 @@ footer img {
     margin-top: -150%;
     z-index: 2;
     position: relative;
-    img-sec{
-        float: left ;
-    }
 }
 .wits-title{
     width: 25%;
