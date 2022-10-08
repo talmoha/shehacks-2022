@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+
 
 html{
     scroll-behavior: smooth;
@@ -7,7 +10,7 @@ html{
 
 body {
     background-color: #EFFEFF;
-    font-family: "Poppins";
+    font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     background-image: url("");
     background-size: cover;
@@ -17,7 +20,7 @@ body {
 
 #ho-body{
     background-color: #EFFEFF;
-    font-family: "Poppins";
+    font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     background-image: url("images/noise.png"), url("images/hacker-olympics/background.png");
     background-size: cover;
@@ -49,19 +52,19 @@ h1, h2, h3, h4 {
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent; */
     color: #244589;
-    font-family: "Poppins";
+    font-family: 'Work Sans', sans-serif;
     font-weight: 700;
 }
 
 h5, h6{
     color: #244589;
-    font-family: "Poppins";
+    font-family: 'Work Sans', sans-serif;
     font-weight: 600;
 }
 
 p{
     color: #244589;
-    font-family: "Poppins";
+    font-family: 'Work Sans', sans-serif;
     font-size: x-large;
 }
 .container{
@@ -97,7 +100,7 @@ nav {
 }
 
 .navbar .nav-item .nav-link {
-    font-family: "Poppins";
+    font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     color: #FFFFFE;
     transition: all 0.3s ease 0s;
@@ -138,7 +141,7 @@ nav {
 
 .curved-path{
     font-size: 0.6em;
-    font-family: Poppins;
+    font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: 190px;
@@ -185,7 +188,7 @@ nav {
 
 /* ************************************************ history ****************************************************** */
 .history-text{
-    font-family: "Poppins";
+    font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     font-size: xx-large;
     color:#244589;
@@ -278,7 +281,7 @@ footer h2{
 footer p {
     font-size: 150%;
     color: #144256;
-    font-family: "Poppins";
+    font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     color: #244589;
 }
@@ -342,9 +345,9 @@ footer img {
     background-image: url(grain.png);
 }
 .about-text{
-    font-family: "Poppins";
+    font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    font-size: xx-large;
+    font-size: 22px;
     color:#244589;
     padding-block: 2%;
 }
@@ -578,22 +581,29 @@ footer img {
     }
 }
 
-.orange-button{
-    background-color: #F08F65;
-    color: white;
+.CTA-button{
+    background-color: white;
+    color: #244589;
     border-radius: 50px;
     text-align: center;
     border: none;
     padding: 18px 25px;
     font-size: large;
+    font-family: 'migraextrabold', serif;
+}
+
+.btn_img:hover{
+    opacity: 0.5;
+    transition: all 0.3s ease 0s;
 }
 .left-align{
     justify-content:left; 
     align-items: left; 
     display: flex;
+    font-family: serif;
 }
 
-.orange-button:hover{
+.CTA-button:hover{
     opacity: 0.5;
     transition: all 0.3s ease 0s;
 }
@@ -818,3 +828,19 @@ footer img {
         font-size: 120px;
     }
 }
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'migraextrabold';
+    src: url("https://shehacks.ca/css/fonts/migra-extrabold-webfont.woff2") format('woff2'),
+    url("https://shehacks.ca/css/fonts/migra-extrabold-webfont.woff") format("woff"),
+
+    }
+    
+    
