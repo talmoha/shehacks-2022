@@ -52,8 +52,6 @@ h1, h2, h3, h4 {
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent; */
     color: #244589;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 700;
 }
 
 h5, h6{
@@ -93,6 +91,9 @@ p{
 .inner-shadow{
     box-shadow: 0px -16px 30px 0px rgba(240, 143, 101, 0.85) inset;
 }
+
+
+
 
 /****************************************************** navbar *******************************************************/
 nav {
@@ -186,10 +187,25 @@ nav {
 }
 
 .sh-logo{
-    position: absolute;
-    width: 55%;
-    top: 30em;
-    left: 21em;
+    display:block;
+    max-width:75px;
+    min-width:60px;
+    position:fixed;
+    left:190px;
+    top:0px;
+    width:10%;
+    z-index:10000;
+    padding: 5px auto 2px auto;
+}
+.mlh-badge{
+    display:block;
+    max-width:75px;
+    min-width:60px;
+    position:fixed;
+    left:75px;
+    top:0px;
+    width:10%;
+    z-index:10000;
 }
 
 /* ************************************************ history ****************************************************** */
@@ -199,6 +215,17 @@ nav {
     font-size: xx-large;
     color:#244589;
     margin-left: 2%;
+}
+.about-text-history{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color:#244589;
+    padding-block: 2%;
+}
+.history{
+    width: 125%;
+    margin-left: -12%;
 }
 .mobile, .phone{
     display: none;
@@ -358,6 +385,8 @@ footer img {
     padding-block: 2%;
     float: left;
 }
+
+
 
 .bowl-noodles{
     position: relative;
@@ -539,18 +568,27 @@ footer img {
 }
 
 @media(max-width:1600px){
+    
     .wits{
         margin-top: -120%;
     }
 }
 
 @media(max-width:1300px){
+    .history{
+        width: 110%;
+        margin-left: -5%;
+    }
     .wits{
         margin-top: -100%;
     }
 }
 
 @media (max-width:991px){
+    .history{
+        width: 125%;
+        margin-left: -12%;
+    }
     .wits{
         margin-top: -110%;
     }
@@ -649,6 +687,31 @@ footer img {
 }
 
 @media (max-width: 768px){
+    .sh-logo{
+        display:block;
+        max-width:50px;
+        min-width:30px;
+        position:fixed;
+        left:190px;
+        top:0px;
+        width:10%;
+        z-index:10000;
+        padding: 5px auto 2px auto;
+    }
+    .mlh-badge{
+        display:block;
+        max-width:50px;
+        min-width:40px;
+        position:fixed;
+        left: 65%;
+        top:0px;
+        width:10%;
+        z-index:10000;
+    }
+    .history{
+        width: 100%;
+        margin-left: 0%;
+    }
     .blob {
         height: 70vh;
     }
@@ -696,6 +759,10 @@ footer img {
 
 
 @media (max-width: 576px){
+    .history{
+        width: 95%;
+        margin-left: 3%;
+    }
     .phone{
         display:contents;
     }
