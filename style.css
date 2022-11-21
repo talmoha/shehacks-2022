@@ -564,10 +564,10 @@ footer img {
 
 /* hacker olympics */
 .ho-title{
-    width: 50%;
+    max-width:80%;
 }
 .goal-title{
-    width: 30%
+    max-width: 70%
 }
 
 @media(max-width:1600px){
