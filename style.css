@@ -640,6 +640,13 @@ footer img {
     font-family: 'migraextrabold', serif;
 }
 
+.apply_now{
+    margin-top:-30%;
+}
+.filler{
+    margin-top:30%;
+}
+
 .btn_img:hover{
     opacity: 0.5;
     transition: all 0.3s ease 0s;
