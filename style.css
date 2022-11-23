@@ -544,7 +544,14 @@ footer img {
         margin-left: 2%;
 }
 
-/**WIT**/
+/*sponsors*/
+#sponsors img{
+    width: 100%;
+    height: auto;
+    padding: 1%;
+}
+
+/**WITS**/
 .wits{
     margin-top: -150%;
     z-index: 2;
