@@ -28,6 +28,7 @@ body {
     background-color: #FFFAED;
 }
 
+
 /* for debugging */
 /* body > * > * > * > * {
     border: solid;
@@ -64,6 +65,10 @@ p{
     color: #244589;
     font-family: 'Work Sans', sans-serif;
     font-size: x-large;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 138.5%;
 }
 .container{
     padding: 5% 0%;
@@ -91,8 +96,6 @@ p{
 .inner-shadow{
     box-shadow: 0px -16px 30px 0px rgba(240, 143, 101, 0.85) inset;
 }
-
-
 
 
 /****************************************************** navbar *******************************************************/
@@ -541,7 +544,14 @@ footer img {
         margin-left: 2%;
 }
 
-/**WIT**/
+/*sponsors*/
+#sponsors img{
+    width: 100%;
+    height: auto;
+    padding: 1%;
+}
+
+/**WITS**/
 .wits{
     margin-top: -150%;
     z-index: 2;
@@ -561,10 +571,10 @@ footer img {
 
 /* hacker olympics */
 .ho-title{
-    width: 50%;
+    max-width:80%;
 }
 .goal-title{
-    width: 30%
+    max-width: 70%
 }
 
 @media(max-width:1600px){
@@ -635,6 +645,13 @@ footer img {
     padding: 18px 25px;
     font-size: large;
     font-family: 'migraextrabold', serif;
+}
+
+.apply_now{
+    margin-top:-30%;
+}
+.filler{
+    margin-top:30%;
 }
 
 .btn_img:hover{
